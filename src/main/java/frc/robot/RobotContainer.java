@@ -34,7 +34,7 @@ public class RobotContainer {
 
   private void configureButtonBindings() {
 
-    new JoystickButton(m_xbox, Button.kY.value).whenPressed(new playSong(m_orchestra, m_chooser.getSelected()));
+    new JoystickButton(m_xbox, Button.kY.value).whenPressed(new playSong(m_orchestra, "Megalovania.chrp"));
 
   }
 
