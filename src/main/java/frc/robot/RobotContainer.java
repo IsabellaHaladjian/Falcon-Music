@@ -4,13 +4,11 @@
 
 package frc.robot;
 
-import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.XboxController.Button;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.InstantCommand;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
 import frc.robot.commands.playSong;
 import frc.robot.subsystems.falconOrchestra;
@@ -30,7 +28,6 @@ public class RobotContainer {
   public void putSongSelector() {
 
     m_chooser.setDefaultOption("Example song", "song-name.chrp");
-    //m_chooser.addOption("idk this is an example", "idk.chrp");
     SmartDashboard.putData("Song Chooser", m_chooser);
 
 }

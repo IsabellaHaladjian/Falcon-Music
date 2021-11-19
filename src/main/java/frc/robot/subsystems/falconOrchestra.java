@@ -12,15 +12,18 @@ public class falconOrchestra extends SubsystemBase {
     private Orchestra m_orchestra;
     TalonFX[] motors = { new TalonFX(0), new TalonFX(1) };
     ArrayList<TalonFX> m_falcons;
-    ArrayList<String> m_songs;
 
-    for(int i = 0; i < motors.length; i++) {
-        
-    }
+    public falconOrchestra() {
 
-        m_songs.add("song-name.chrp"); //at index 0
+        for(int i = 0; i <= motors.length; i++) {
+
+            m_falcons.add(motors[i]);
+
+        }
 
         m_orchestra = new Orchestra(m_falcons);
+
+    }
 
     public void playSong(String song) {
 
